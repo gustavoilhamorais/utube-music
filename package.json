@@ -1,0 +1,30 @@
+{
+  "name": "youtube-music-electron-app",
+  "version": "1.0.0",
+  "description": "Youtube Music Desktop App rendered with Electron.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CyberGust/ytmusic-electronapp.git"
+  },
+  "keywords": [
+    "electron",
+    "node",
+    "js",
+    "javascript",
+    "youtube",
+    "music"
+  ],
+  "author": "Gustavo Ilha Morais",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/CyberGust/ytmusic-electronapp/issues"
+  },
+  "homepage": "https://github.com/CyberGust/ytmusic-electronapp#readme",
+  "dependencies": {
+    "electron": "^5.0.2"
+  }
+}
