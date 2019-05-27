@@ -1,2 +1,2 @@
 # ytmusic-electronapp
-Youtube Music Desktop App rendered with Electron.
+Youtube Music and Youtube TV Desktop App rendered with Electron.
