@@ -1,7 +1,7 @@
 {
-  "name": "youtube-music-electron-app",
+  "name": "utube-music",
   "version": "0.1.0",
-  "description": "Youtube Music Desktop App rendered with Electron.",
+  "description": "Youtube Music for Desktop (unoficial) App.",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
