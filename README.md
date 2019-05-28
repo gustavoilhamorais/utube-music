@@ -1,2 +1,2 @@
 # youtube-electronapp
-Youtube Music and Youtube TV Desktop App rendered with Electron.
+Youtube Music App rendered with Electron, Node JS and Photon.
