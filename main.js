@@ -8,12 +8,29 @@ let mainWindow;
 function createWindow() {
     // Create the browser window.
     mainWindow = new BrowserWindow({
-        width: 800,
-        height: 500,
+        width: 1000,
+        height: 600,
+        frame: false,
+        resizable: false,
+        icon: __dirname + "/icon.png",
         webPreferences: {
             nodeIntegration: true
         }
     });
+
+    // remove 'x-frame-options' header to allow embedding external pages into an 'iframe'
+    mainWindow.webContents.session.webRequest.onHeadersReceived(
+        {},
+        (details, callback) => {
+            if (details.responseHeaders["x-frame-options"]) {
+                delete details.responseHeaders["x-frame-options"];
+            }
+            callback({
+                cancel: false,
+                responseHeaders: details.responseHeaders
+            });
+        }
+    );
 
     // and load the index.html of the app.
     mainWindow.loadFile("index.html");
