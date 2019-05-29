@@ -1,0 +1,11 @@
+directories:
+  output: dist
+  buildResources: build
+appId: Youtube-ElectronApp
+linux:
+  target:
+    - deb
+    - snap
+    - rpm
+  category: Entertainment
+electronVersion: 5.0.2
